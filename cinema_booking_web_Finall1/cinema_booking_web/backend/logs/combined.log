@@ -1,0 +1,168 @@
+{"level":"info","message":"Connected to MongoDB","service":"cinema-booking-backend","timestamp":"2026-03-21T16:05:19.018Z"}
+{"level":"info","message":"Server running on port 5000","service":"cinema-booking-backend","timestamp":"2026-03-21T16:05:19.056Z"}
+{"level":"info","message":"GET / from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:05:19.373Z"}
+{"level":"info","message":"GET /favicon.ico from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:05:19.744Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:06:14.785Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:06:14.810Z"}
+{"level":"info","message":"GET / from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:07:43.244Z"}
+{"level":"info","message":"GET /favicon.ico from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:07:43.509Z"}
+{"level":"info","message":"GET /csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:07:47.927Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:09:19.324Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:14:50.286Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:15:18.311Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:15:18.344Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:15:18.413Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:18:19.017Z"}
+{"level":"info","message":"GET / from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:19:16.911Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:19:32.669Z"}
+{"level":"info","message":"GET /auth/login from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:20:19.438Z"}
+{"level":"info","message":"GET /auth/ from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:20:24.902Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/?email=Ahmed@gmail.com&password=Ahmed_441, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:21:16.844Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:21:44.770Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/?email=Ahmed@gmail.com&password=Ahmed_441&csrfToken=342f3a8e07a212b77172a8a6340506f60479336d14bd2bf2a35d80875d65be20.f1f411e61dc8afa8fb38869f8f8d7ca6bd789d962de957fb9e823e2b1d709085, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:22:31.091Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/?email=Ahmed@gmail.com&password=Ahmed_441&csrfToken=342f3a8e07a212b77172a8a6340506f60479336d14bd2bf2a35d80875d65be20.f1f411e61dc8afa8fb38869f8f8d7ca6bd789d962de957fb9e823e2b1d709085, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:23:06.948Z"}
+{"level":"warn","message":"Blocked request due to CSRF token mismatch. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:23:31.823Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:23:31.830Z"}
+{"level":"info","message":"POST /auth/login from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:23:31.884Z"}
+{"level":"info","message":"User logged in successfully. User ID: 69be8b3152a16ecdcd0f54d6, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:23:32.038Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:23:32.886Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:23:32.895Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:25:51.371Z"}
+{"level":"info","message":"POST /auth/login from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:26:04.668Z"}
+{"level":"info","message":"User logged in successfully. User ID: 69be8b3152a16ecdcd0f54d6, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:26:04.750Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:26:05.576Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:26:05.585Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/?email=Ahmed@gmail.com&password=Ahmed_441&csrfToken=342f3a8e07a212b77172a8a6340506f60479336d14bd2bf2a35d80875d65be20.f1f411e61dc8afa8fb38869f8f8d7ca6bd789d962de957fb9e823e2b1d709085, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:28:56.408Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/?email=Ahmed@gmail.com&password=Ahmed_441&csrfToken=342f3a8e07a212b77172a8a6340506f60479336d14bd2bf2a35d80875d65be20.f1f411e61dc8afa8fb38869f8f8d7ca6bd789d962de957fb9e823e2b1d709085, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:29:04.941Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/?email=Ahmed@gmail.com&password=Ahmed_441&csrfToken=342f3a8e07a212b77172a8a6340506f60479336d14bd2bf2a35d80875d65be20.f1f411e61dc8afa8fb38869f8f8d7ca6bd789d962de957fb9e823e2b1d709085, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:29:30.977Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/?email=Ahmed@gmail.com&password=Ahmed_441&csrfToken=342f3a8e07a212b77172a8a6340506f60479336d14bd2bf2a35d80875d65be20.f1f411e61dc8afa8fb38869f8f8d7ca6bd789d962de957fb9e823e2b1d709085, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:29:56.498Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/?email=Ahmed@gmail.com&password=Ahmed_441, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:30:01.728Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:30:25.292Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:31:12.277Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:31:55.865Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:33:54.784Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:34:56.977Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:35:05.652Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:35:17.420Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:36:37.271Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:36:37.284Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:36:37.326Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:37:27.116Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:38:05.315Z"}
+{"level":"info","message":"POST /auth/login from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:39:10.724Z"}
+{"level":"info","message":"User logged in successfully. User ID: 69be8b3152a16ecdcd0f54d6, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:39:11.025Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:39:11.933Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:39:11.969Z"}
+{"level":"info","message":"GET /booking/user from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:39:43.251Z"}
+{"level":"info","message":"GET /booking/user from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:39:43.331Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:39:47.070Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:39:47.076Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:39:57.722Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:40:22.767Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:43:59.556Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:43:59.567Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:43:59.592Z"}
+{"level":"info","message":"GET /auth/login from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:44:05.368Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:44:29.004Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:44:30.875Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:44:31.993Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:44:42.809Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:44:51.974Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:47:20.427Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:47:21.858Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:47:22.504Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:47:22.984Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:49:25.289Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:52:51.633Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:53:07.907Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/csrf_token, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:53:47.785Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/csrf_token, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:53:54.845Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/csrf-token, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:54:08.038Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/csrf-token, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:54:11.544Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/csrf-token, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:54:20.079Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:54:39.777Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:55:07.964Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:55:29.943Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:55:41.317Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:56:07.774Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:56:25.476Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:56:33.721Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:56:34.692Z"}
+{"level":"info","message":"GET /auth/login from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:56:56.870Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:57:05.860Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:58:16.495Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:58:47.471Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:59:23.237Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:59:25.139Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:59:31.932Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T16:59:34.029Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login?email=Ahmed@gmail.com&password=Ahmed_441, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:00:34.518Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login?email=Ahmed@gmail.com&password=Ahmed_441, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:00:35.749Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:09:42.071Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login?email=Ahmed@gmail.com&password=Ahmed_441, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:11:01.765Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login?email=Ahmed@gmail.com&password=Ahmed_441, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:11:14.115Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:13:19.469Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login?email=Ahmed@gmail.com&password=Ahmed_441, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:13:19.604Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:13:50.888Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:14:51.176Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login?email=Ahmed@gmail.com&password=Ahmed_441, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:14:51.300Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:21:00.228Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: POST, URL: /auth/login?email=Ahmed@gmail.com&password=Ahmed_441, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:21:00.301Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:21:42.749Z"}
+{"level":"info","message":"POST /auth/login?email=Ahmed@gmail.com&password=Ahmed_441 from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:21:42.837Z"}
+{"level":"error","message":"Unhandled error: Cannot destructure property 'email' of 'req.body' as it is undefined.\nStack: TypeError: Cannot destructure property 'email' of 'req.body' as it is undefined.\n    at loginUser (/app/controllers/authController.js:58:11)\n    at Layer.handleRequest (/app/node_modules/router/lib/layer.js:152:17)\n    at next (/app/node_modules/router/lib/route.js:157:13)\n    at /app/middleware/validationMiddleware.js:16:5\n    at Layer.handleRequest (/app/node_modules/router/lib/layer.js:152:17)\n    at next (/app/node_modules/router/lib/route.js:157:13)\n    at /app/node_modules/express-rate-limit/dist/index.cjs:947:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /app/node_modules/express-rate-limit/dist/index.cjs:830:5","service":"cinema-booking-backend","timestamp":"2026-03-21T17:21:42.932Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:21:48.853Z"}
+{"level":"info","message":"POST /auth/login?email=Ahmed@gmail.com&password=Ahmed_441 from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:21:48.927Z"}
+{"level":"error","message":"Unhandled error: Cannot destructure property 'email' of 'req.body' as it is undefined.\nStack: TypeError: Cannot destructure property 'email' of 'req.body' as it is undefined.\n    at loginUser (/app/controllers/authController.js:58:11)\n    at Layer.handleRequest (/app/node_modules/router/lib/layer.js:152:17)\n    at next (/app/node_modules/router/lib/route.js:157:13)\n    at /app/middleware/validationMiddleware.js:16:5\n    at Layer.handleRequest (/app/node_modules/router/lib/layer.js:152:17)\n    at next (/app/node_modules/router/lib/route.js:157:13)\n    at /app/node_modules/express-rate-limit/dist/index.cjs:947:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /app/node_modules/express-rate-limit/dist/index.cjs:830:5","service":"cinema-booking-backend","timestamp":"2026-03-21T17:21:48.930Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:21:59.578Z"}
+{"level":"info","message":"POST /auth/login?email=Ahmed@gmail.com&password=Ahmed_441 from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:21:59.728Z"}
+{"level":"error","message":"Unhandled error: Cannot destructure property 'email' of 'req.body' as it is undefined.\nStack: TypeError: Cannot destructure property 'email' of 'req.body' as it is undefined.\n    at loginUser (/app/controllers/authController.js:58:11)\n    at Layer.handleRequest (/app/node_modules/router/lib/layer.js:152:17)\n    at next (/app/node_modules/router/lib/route.js:157:13)\n    at /app/middleware/validationMiddleware.js:16:5\n    at Layer.handleRequest (/app/node_modules/router/lib/layer.js:152:17)\n    at next (/app/node_modules/router/lib/route.js:157:13)\n    at /app/node_modules/express-rate-limit/dist/index.cjs:947:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /app/node_modules/express-rate-limit/dist/index.cjs:830:5","service":"cinema-booking-backend","timestamp":"2026-03-21T17:21:59.731Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:22:07.798Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:23:05.353Z"}
+{"level":"info","message":"POST /auth/login from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:23:05.484Z"}
+{"level":"info","message":"User logged in successfully. User ID: 69be8b3152a16ecdcd0f54d6, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:23:05.747Z"}
+{"level":"info","message":"POST //booking/69be93eb52a16ecdcd0f5507 from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:25:59.003Z"}
+{"level":"info","message":"DELETE //booking/69be93eb52a16ecdcd0f5507 from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:26:06.461Z"}
+{"level":"info","message":"DELETE /booking/69be93eb52a16ecdcd0f5507 from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:26:13.920Z"}
+{"level":"warn","message":"Unauthorized access attempt (No token) on /booking/69be93eb52a16ecdcd0f5507 from IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:26:13.934Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:27:26.708Z"}
+{"level":"info","message":"POST /auth/login from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:27:27.171Z"}
+{"level":"info","message":"User logged in successfully. User ID: 69be8b3152a16ecdcd0f54d6, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:27:27.284Z"}
+{"level":"info","message":"DELETE /booking/69be93eb52a16ecdcd0f5507 from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:27:35.812Z"}
+{"level":"info","message":"Booking cancelled. Booking ID: 69be93eb52a16ecdcd0f5507, User ID: 69be8b3152a16ecdcd0f54d6, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:27:35.944Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: DELETE, URL: /booking/69be93eb52a16ecdcd0f5507, IP: ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:29:12.211Z"}
+{"level":"info","message":"GET /booking/user from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:30:06.479Z"}
+{"level":"info","message":"GET /booking/user from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:30:06.517Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:30:07.604Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:30:07.610Z"}
+{"level":"info","message":"GET /booking/user from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:30:08.167Z"}
+{"level":"info","message":"GET /booking/user from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:30:08.181Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:30:08.957Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.21.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T17:30:08.962Z"}
+{"level":"info","message":"Connected to MongoDB","service":"cinema-booking-backend","timestamp":"2026-03-21T18:03:04.194Z"}
+{"level":"info","message":"Seeded MongoDB with dummy films.","service":"cinema-booking-backend","timestamp":"2026-03-21T18:03:04.334Z"}
+{"level":"info","message":"Server running on port 5000","service":"cinema-booking-backend","timestamp":"2026-03-21T18:03:04.337Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:05:05.785Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:05:05.794Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:05:05.820Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:06:36.122Z"}
+{"level":"info","message":"POST /auth/login from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:06:36.210Z"}
+{"level":"warn","message":"Failed login attempt for non-existing account from IP: ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:06:36.216Z"}
+{"level":"info","message":"POST /auth/register from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:08:45.189Z"}
+{"level":"info","message":"New user registered. User ID: 69bedead102ce4a3bf98027d, IP: ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:08:45.303Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:08:46.122Z"}
+{"level":"info","message":"GET /movies from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:08:46.136Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:10:08.675Z"}
+{"level":"info","message":"POST /auth/login from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:10:08.733Z"}
+{"level":"info","message":"User logged in successfully. User ID: 69bedead102ce4a3bf98027d, IP: ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:10:08.832Z"}
+{"level":"warn","message":"Blocked request due to missing CSRF token. Method: DELETE, URL: /booking/69be93eb52a16ecdcd0f5507, IP: ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:13:49.054Z"}
+{"level":"warn","message":"Blocked request due to CSRF token mismatch. Method: DELETE, URL: /booking/69be93eb52a16ecdcd0f5507, IP: ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:14:29.483Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:15:00.481Z"}
+{"level":"warn","message":"Blocked request due to CSRF token mismatch. Method: DELETE, URL: /booking/69be93eb52a16ecdcd0f5507, IP: ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:15:10.235Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:16:06.517Z"}
+{"level":"info","message":"DELETE /booking/69be93eb52a16ecdcd0f5507 from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:16:13.623Z"}
+{"level":"warn","message":"Invalid token attempt on /booking/69be93eb52a16ecdcd0f5507 from IP: ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:16:13.625Z"}
+{"level":"info","message":"GET /auth/csrf-token from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:16:31.071Z"}
+{"level":"info","message":"POST /auth/login from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:16:31.128Z"}
+{"level":"info","message":"User logged in successfully. User ID: 69bedead102ce4a3bf98027d, IP: ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:16:31.219Z"}
+{"level":"info","message":"DELETE /booking/69be93eb52a16ecdcd0f5507 from ::ffff:172.18.0.1","service":"cinema-booking-backend","timestamp":"2026-03-21T18:16:40.495Z"}

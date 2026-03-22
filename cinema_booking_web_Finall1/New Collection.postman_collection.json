@@ -1,0 +1,245 @@
+{
+  "info": {
+    "_postman_id": "7fe7617d-a148-4fbf-be29-9e5e8cceb27c",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53388124",
+    "_collection_link": "https://go.postman.co/collection/53388124-7fe7617d-a148-4fbf-be29-9e5e8cceb27c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Store Categories",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "accept-encoding": true
+        }
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "XSRF-TOKEN",
+            "value": "eyJpdiI6ImhMSkVJOStmNE5oNDY1OXB6Y3hTa1E9PSIsInZhbHVlIjoiTlRXekRWanhoLzIyK2RYMzFLMjlWcjBWSlAzK1ZNeERhRndaTFlXU1VLc3h5SHY1REduYkh3bEwxNlI2aFgxb0JkWE5ISXk2ZDFieFpmMm8vWjg5dndGbGN2SmRJZ091S01URk1BdXliM2JuTkd0U0pKKzQ1dnpYTy9BdG03UDciLCJtYWMiOiJjZTZiMjMxY2M2MDc1M2UyNDI3Zjc4ZDY3ZWIzN2I1NTdiNzFiMjU2NjBkMmJkY2ZkNDkxYmE0YzZhMzgzMjBiIiwidGFnIjoiIn0=",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/categories/validate-store",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "categories",
+            "validate-store"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Test",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "// Source - https://stackoverflow.com/a/35925413\r",
+              "// Posted by johnny 5, modified by community. See post 'Timeline' for change history\r",
+              "// Retrieved 2026-03-21, License - CC BY-SA 4.0\r",
+              "\r",
+              "pm.environment.set(\"csrf_token\", decodeURIComponent(pm.cookies.get(\"csrf_token\")))\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {}
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "csrf-token",
+            "value": "\"342f3a8e07a212b77172a8a6340506f60479336d14bd2bf2a35d80875d65be20.f1f411e61dc8afa8fb38869f8f8d7ca6bd789d962de957fb9e823e2b1d709085\"",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:5000/auth/csrf-token",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "auth",
+            "csrf-token"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "pm.sendRequest(\"http://localhost:5000/auth/csrf-token\", function (err, res) {",
+              "    if (err) {",
+              "        console.log(\"Error fetching CSRF token:\", err);",
+              "    } else {",
+              "        var csrfToken = res.json().csrfToken;",
+              "        pm.environment.set(\"csrf_token\", csrfToken);",
+              "    }",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "var jsonData = pm.response.json();",
+              "if (jsonData.token) {",
+              "    pm.environment.set(\"token\", jsonData.token);",
+              "    console.log(\"Token saved successfully\");",
+              "}"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-csrf-token",
+            "value": "{{csrf_token}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"eldesoqieshraq010@gmail.com\",\r\n    \"password\":\"Eshraq_12\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete movie",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "x-csrf-token",
+            "value": "{{csrf_token}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"Ahmed@gmail.com\",\r\n    \"password\":\"Ahmed_441\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/booking/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "booking",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "69be93eb52a16ecdcd0f5507"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
