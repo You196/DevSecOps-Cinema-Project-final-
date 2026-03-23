@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cinema-backend
+spec:
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: cinema-backend:latest # You'll build/load this image
+        env:
+        - name: MONGODB_URI
+          valueFrom:
+            secretKeyRef:
+              name: cinema-secrets
+              key: MONGO_URI
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: db-isolation
+spec:
+  podSelector:
+    matchLabels:
+      app: mongo
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: backend

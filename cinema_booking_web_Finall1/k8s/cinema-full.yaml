@@ -1,0 +1,148 @@
+# Secret
+apiVersion: v1
+kind: Secret
+metadata:
+  name: cinema-secrets
+type: Opaque
+stringData:
+  MONGO_URI: mongodb://mongo:27017/cinema_booking
+  JWT_SECRET: supersecretjwtkey1234567890abcdef
+  CSRF_SECRET: supersecretcsrfkey1234567890abcdef
+  ENCRYPTION_KEY: 12345678901234567890123456789012
+---
+# MongoDB Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo
+spec:
+  selector:
+    matchLabels:
+      app: mongo
+  template:
+    metadata:
+      labels:
+        app: mongo
+    spec:
+      containers:
+      - name: mongo
+        image: mongo:6
+        ports:
+        - containerPort: 27017
+        volumeMounts:
+        - name: mongo-data
+          mountPath: /data/db
+      volumes:
+      - name: mongo-data
+        emptyDir: {}
+---
+# MongoDB Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo
+spec:
+  selector:
+    app: mongo
+  ports:
+  - port: 27017
+    targetPort: 27017
+---
+# Backend Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cinema-backend
+spec:
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: cinema-backend:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000
+        env:
+        - name: MONGODB_URI
+          valueFrom:
+            secretKeyRef:
+              name: cinema-secrets
+              key: MONGO_URI
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: cinema-secrets
+              key: JWT_SECRET
+        - name: CSRF_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: cinema-secrets
+              key: CSRF_SECRET
+        - name: ENCRYPTION_KEY
+          valueFrom:
+            secretKeyRef:
+              name: cinema-secrets
+              key: ENCRYPTION_KEY
+        - name: NODE_ENV
+          value: production
+        - name: FRONTEND_URL
+          value: http://192.168.216.142:30080
+        - name: TRUSTED_ORIGINS
+          value: http://192.168.216.142:30080
+        - name: CSRF_COOKIE_SECURE
+          value: "false"
+---
+# Backend Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: cinema-backend
+spec:
+  type: NodePort
+  selector:
+    app: backend
+  ports:
+  - port: 5000
+    targetPort: 5000
+    nodePort: 30500
+---
+# Frontend Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cinema-frontend
+spec:
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: cinema-frontend:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+---
+# Frontend Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: cinema-frontend
+spec:
+  type: NodePort
+  selector:
+    app: frontend
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30080
