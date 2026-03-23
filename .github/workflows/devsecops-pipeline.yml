@@ -1,0 +1,35 @@
+name: DevSecOps CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  security-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 1. Build and Scan Backend
+      - name: Build Backend Image
+        run: docker build -t cinema-backend:${{ github.sha }} ./backend
+
+      - name: Trivy Scan Backend
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'cinema-backend:${{ github.sha }}'
+          format: 'table'
+          exit-code: '1' # This FAILS the build if vulnerabilities are found
+          severity: 'CRITICAL,HIGH'
+
+      # 2. Build and Scan Frontend
+      - name: Build Frontend Image
+        run: docker build -t cinema-frontend:${{ github.sha }} ./frontend
+
+      - name: Trivy Scan Frontend
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'cinema-frontend:${{ github.sha }}'
+          format: 'table'
+          exit-code: '1'
+          severity: 'CRITICAL,HIGH'
